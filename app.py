@@ -79,7 +79,7 @@ def load_overall_analysis():
     temp_df['x-Axis'] = temp_df['month'].astype('str') + '-' + temp_df['month'].astype('str')
     fig3, ax3 = plt.subplots()
     ax3.scatter(temp_df['x-Axis'], temp_df['amount'])
-    ax3.set_xticklabels(temp_df['x-Axis'], rotation=135, ha='center')
+    ax3.set_xticklabels(temp_df['x-Axis'], rotation=315, ha='center')
     st.pyplot(fig3)
 def load_startup_details(startup):
     st.title('Startup Detailes')
